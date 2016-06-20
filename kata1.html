@@ -17,6 +17,7 @@
   <div id="example6"></div>
   <div id="example7"></div>
   <div id="example8"></div>
+  <div id="example9"></div>
 <script>
 	//single line comments look like this
 	
@@ -90,6 +91,16 @@ function Series(title) {
 
 var temp2 = Series("Series: How To Make A Series ")
 document.getElementById("example8").innerHTML = temp2.display();
+
+
+
+var bob = Object.create(null,{
+	name: {
+		value:"Jimmy"
+	}
+	});
+
+document.getElementById("example9").innerHTML = bob.name;  
 
 </script>
 
