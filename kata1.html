@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kata One JS Objects</title>
+ 
+
+</head>
+<body>
+
+
+  <div id="example"></div>
+  <div id="example1"></div>
+  <div id="example2"></div>
+  <div id="example3"></div>
+  <div id="example4"></div>
+  <div id="example5"></div>
+  <div id="example6"></div>
+
+
+<script>
+	//single line comments look like this
+	
+	document.getElementById("example").innerHTML = "Hello World";
+	/*multi line comments
+	look like this*/
+   var directorFirstName = "Emily";
+  var directorLastName = "Smith";
+  document.getElementById("example1").innerHTML = directorFirstName + 
+  " " + directorLastName;
+  var show = {title:"My First Show", totalLength:90, 
+		  messageLength:70, addLength:20,outputHelloWorld:
+		  function() {return "Hello World!!!!!"}};
+  
+  
+  var len = show.messageLength;
+  var temp = new String();
+  temp = show["title"];
+  show.totalLength = calculateTotalLength(show.messageLength,
+		  show.addLength);
+  
+  document.getElementById("example2").innerHTML = show.outputHelloWorld();
+  document.getElementById("example3").innerHTML = show.totalLength;
+  
+  function calculateTotalLength(message,add){
+	  return message+add;
+  }
+  
+  var junk = "Practice";
+  junk += " concat"; 
+  document.getElementById("example4").innerHTML = junk;
+  
+  //Data types String, Number, Boolean, Array, Object
+   var a = "string type";//string type
+  var b = 8;//number type
+  var c = true; //boolean type
+  var d = ['hello','there','how','are','you']; //array
+  var e = {spacer:" ", prefix:"** ", sufix:" ***"}; //object
+  
+  document.getElementById("example5").innerHTML = d;
+  document.getElementById("example6").innerHTML = e.prefix + a 
+  + e.spacer + d[0] + e.sufix ; 
+  
+</script>
+
+
+</body>
+</html>
